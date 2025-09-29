@@ -33,5 +33,9 @@ def main():
         "science_fiction":{"Journey to the Centre of the Earth","Day of the Triffids"},
         "drama":{"A Tale of Two Cities","Moby Dick"},
     }
+    if("science_fiction" in library):
+        library["science_fiction"]="The War of the Worlds"
+    else:
+        library.update("science_fiction")
 
 main()
